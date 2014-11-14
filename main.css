@@ -1,0 +1,90 @@
+body {
+  font-family: Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+article {
+  width: 640px;
+  border: 1px solid #ff3300;
+}
+p {
+  margin: 0 0 0.5em 0;
+}
+p:last-child {
+  margin: 0;
+}
+/* ここから */
+img {
+  border-left: 8px solid #666666;
+  border-right: 8px solid #666666;
+  width: 616px; /* content幅 */
+  height: auto;
+  margin: 0 auto;
+  padding: 0 4px 0 4px;
+  display: block;
+}
+blockquote *,
+cite * {
+  color: #666666;
+  text-decoration: none;
+}
+blockquote {
+  background-color:#e4e4e4;
+  padding: 1em 1em;
+  position: relative;
+  margin: 0 0 10px 0;
+  z-index: 1;
+  border-left: 8px solid #999999;
+}
+blockquote:before {
+  content: "“";
+  font-size: 600%;
+  line-height: 1em;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  font-family:"ＭＳ Ｐゴシック",sans-serif;
+}
+blockquote:after {
+  content: "”";
+  font-size: 600%;
+  line-height: 0em;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  font-family:"ＭＳ Ｐゴシック",sans-serif;
+}
+
+blockquote img {
+  width: 560px;
+}
+cite {
+  font-style: normal;
+  padding: 0 4px;
+}
+cite a {
+  color: #3e3e3e;
+  background: #f0f0f0;
+  padding: 0 0.4em;
+}
+cite a:hover {
+  background: #6e6e6e;
+  color: #ffffff;
+}
+blockquote footer {
+  border-top: 1px solid #f6f6f6;
+  text-align: right;
+}
+
+
+/*
+// cite …引用元の書籍名、URIなど
+// q …改行を伴わない短い文章の引用。インラインクオート
+// blockquote …段落全体など、ブロック要素の引用を行う場合。ブロッククオート
+// blockquoteのcite属性 …<blockquote cite="http://www.google.com/">……で引用元URLを指定する
+
+// blockquoteはpなど文章構成タグを内包する場合があり、qはインライン要素的な解釈で良いか？
+//
+// body, pなどフォントサイズの指定なし。環境に合わせて変更する必要あり
